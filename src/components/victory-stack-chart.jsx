@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   VictoryChart,
   VictoryStack,
@@ -8,8 +8,6 @@ import {
 } from "victory";
 
 import { Card, CardContent } from "@material-ui/core";
-
-import ReactVisibilitySensor from "react-visibility-sensor";
 
 export default function ({ data, title, xLabel }) {
   const dataPoints = Object.entries(data).map(([_, obj]) => obj);
