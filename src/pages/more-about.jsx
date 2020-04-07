@@ -5,7 +5,7 @@ import CardImage from "../components/card-image";
 export default function () {
   return (
     <Container
-      maxWidth="100vh"
+      maxWidth="xl"
       style={{
         minHeight: "100vh"
       }}
@@ -15,7 +15,7 @@ export default function () {
           More about me
         </Typography>
         <CardImage imageTitle="Life at Trusteer" image="./shlomi-baruch.jpg">
-          <Typography style={{ fontSize: 30 }}>
+          <Typography component="div" style={{ fontSize: 30 }}>
             <p>
               I share my life with my partner{" "}
               <a href="https://www.linkedin.com/in/baruch-shteken/">Baruch</a>.
@@ -34,7 +34,7 @@ export default function () {
           image="./shlomi-laika.jpg"
           imageFirst={true}
         >
-          <Typography style={{ fontSize: 30 }}>
+          <Typography component="div" style={{ fontSize: 30 }}>
             <p>
               We grow together our dog Laika, a very sensitive Belgian Malinois
               mix. I'm an animal lover, I especially like dogs.

@@ -41,7 +41,7 @@ export default function Base(props) {
           id="panel1a-header"
           classes={{ expandIcon: classes.expandIcon }}
         >
-          <Grid container xs={12}>
+          <Grid container>
             <Grid item xs={12} style={{ textAlign: "left" }}>
               <Typography variant="h5" gutterBottom>
                 {props.title}
@@ -70,7 +70,7 @@ export default function Base(props) {
                 </Typography>
               </div>
               <div>
-                <Typography variant="h7" gutterBottom>
+                <Typography variant="h6" gutterBottom>
                   {props.location}
                 </Typography>
               </div>

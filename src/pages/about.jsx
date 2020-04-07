@@ -6,7 +6,7 @@ import CardImage from "../components/card-image";
 export default function () {
   return (
     <Container
-      maxWidth="100vh"
+      maxWidth="xl"
       style={{
         minHeight: "100vh"
       }}
@@ -21,18 +21,16 @@ export default function () {
             About myself
           </Typography>
           <Typography style={{ fontSize: 30 }}>
-            <p>
-              I’m a Full Stack developer, and passionate about programming. I’m
-              always ready to get new sources of ideas and skills, I love
-              discussing technologies and collaborating with skilled individuals
-              and groups.
-            </p>
-            <p>
-              I worked for 6 years in Trusteer (a division of IBM Security), and
-              made a big journey, working and integrating with numerous local
-              and remote teams in order to deliver high quality tools to our
-              customers.
-            </p>
+            I’m a Full Stack developer, and passionate about programming. I’m
+            always ready to get new sources of ideas and skills, I love
+            discussing technologies and collaborating with skilled individuals
+            and groups.
+          </Typography>
+          <Typography style={{ fontSize: 30 }}>
+            I worked for 6 years in Trusteer (a division of IBM Security), and
+            made a big journey, working and integrating with numerous local and
+            remote teams in order to deliver high quality tools to our
+            customers.
           </Typography>
         </CardImage>
       </Container>

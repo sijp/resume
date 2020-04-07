@@ -35,8 +35,11 @@ export default function CardImage({ children, image, imageTitle, imageFirst }) {
           className={classes.cardMedia}
           title={imageTitle}
           image={image}
+          key="media"
         />,
-        <CardContent className={classes.cardContent}>{children}</CardContent>
+        <CardContent key="content" className={classes.cardContent}>
+          {children}
+        </CardContent>
       ])}
     </Card>
   );

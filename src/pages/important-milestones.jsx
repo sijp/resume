@@ -47,7 +47,7 @@ export default function () {
           User Interface was developed using Sencha ExtJS 4.2, deployment using
           Capistrano to AWS EC2.
         </Typography>
-        <Typography>
+        <Typography component="div">
           Notable achievements Include:
           <ul>
             <li>

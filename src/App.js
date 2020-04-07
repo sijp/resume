@@ -15,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <Pages
+        key="the-pages"
         background={[
           "url(/wallpaper.jpg)",
           "url(/wallpaper-about.jpg)",
@@ -24,12 +25,12 @@ function App() {
           "#CCC"
         ]}
       >
-        <Header />
-        <About />
-        <WorkTimeline />
-        <ProjectsTimeline />
-        <ToolsOfTrade />
-        <MoreAbout />
+        <Header key="page-header" />
+        <About key="page-about" />
+        <WorkTimeline key="page-work-timeline" />
+        <ProjectsTimeline key="page-projects-timeline" />
+        <ToolsOfTrade key="page-tools-of-trade" />
+        <MoreAbout key="page-more-about" />
       </Pages>
     </div>
   );

@@ -97,7 +97,7 @@ export default function () {
         <GridImage xs={4} src={reactLogo} width="200" height="200" />
         <GridImage xs={4} src={jsLogo} width="200" height="200" />
         <GridImage xs={4} src={nodejsLogo} width="200" height="200" />
-        <Grid xs={1} />
+        <Grid item xs={1} />
         <GridImage xs={2} src={rorLogo} width="100" height="100" />
         <GridImage xs={2} src={rubyLogo} width="100" height="100" />
         <GridImage xs={2} src={pythonLogo} width="100" height="100" />
