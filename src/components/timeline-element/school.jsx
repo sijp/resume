@@ -8,7 +8,6 @@ export default function School(props) {
     <Base
       className="vertical-timeline-element--education"
       iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-      contentStyle={{ textAlign: "left" }}
       icon={<SchoolIcon />}
       {...props}
     />

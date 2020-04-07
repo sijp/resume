@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 
 import Timeline from "../components/timeline";
 
@@ -11,7 +11,7 @@ import bguLogo from "../logos/bgu.svg";
 
 export default function workTimeline() {
   return (
-    <Container maxWidth="100vh" style={{ paddingTop: 100 }}>
+    <>
       <Typography variant="h3" style={{ textAlign: "center" }}>
         Work and Education
       </Typography>
@@ -56,6 +56,6 @@ export default function workTimeline() {
           <p>Bachelor of Science from the department of Computer Science</p>
         </School>
       </Timeline>
-    </Container>
+    </>
   );
 }

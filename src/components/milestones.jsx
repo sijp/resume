@@ -10,19 +10,19 @@ import {
   Typography
 } from "@material-ui/core";
 
-export default function(props) {
-  const { steps, children, initStep, onChange, title } = props;
+export default function (props) {
+  const { steps, children, initStep, onChange, title, style } = props;
   const [activeStep, setActiveStep] = useState(parseInt(initStep) || 0);
 
   const stepContent = Array.isArray(children) ? children : [children];
 
-  const handleStep = step => () => {
+  const handleStep = (step) => () => {
     setActiveStep(step);
     onChange(step);
   };
 
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" style={style}>
       <Card style={{ padding: 20 }}>
         <CardContent>
           <Typography variant="h3" style={{ textAlign: "center" }}>

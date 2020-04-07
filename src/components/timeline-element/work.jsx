@@ -8,7 +8,6 @@ export default function Work(props) {
     <Base
       className="vertical-timeline-element--work"
       iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-      contentStyle={{ textAlign: "left" }}
       icon={<WorkIcon />}
       {...props}
     />

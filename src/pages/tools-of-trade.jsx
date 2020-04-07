@@ -78,40 +78,32 @@ function getData() {
   };
 }
 
-export default function() {
+export default function () {
   return (
-    <Container
-      maxWidth="100vh"
-      style={{
-        minHeight: "100vh",
-        paddingTop: 100
-      }}
-    >
-      <Container>
-        <Grid container spacing={10} style={{ marginTop: 10 }}>
-          <Grid item xs={12}>
-            <Typography variant="h3" style={{ textAlign: "center" }}>
-              Tools of Trade
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <VictoryStackChart
-              xLabel="Notable Years"
-              title="Technology Stack Distribution"
-              data={getData()}
-            ></VictoryStackChart>
-          </Grid>
-          <GridImage xs={4} src={reactLogo} width="200" height="200" />
-          <GridImage xs={4} src={jsLogo} width="200" height="200" />
-          <GridImage xs={4} src={nodejsLogo} width="200" height="200" />
-          <Grid xs={1} />
-          <GridImage xs={2} src={rorLogo} width="100" height="100" />
-          <GridImage xs={2} src={rubyLogo} width="100" height="100" />
-          <GridImage xs={2} src={pythonLogo} width="100" height="100" />
-          <GridImage xs={2} src={reduxLogo} width="100" height="100" />
-          <GridImage xs={2} src={vueLogo} width="100" height="100" />
+    <Container style={{ minWidth: 640 }}>
+      <Grid container spacing={10} style={{ marginTop: 10 }}>
+        <Grid item xs={12}>
+          <Typography variant="h3" style={{ textAlign: "center" }}>
+            Tools of Trade
+          </Typography>
         </Grid>
-      </Container>
+        <Grid item xs={12}>
+          <VictoryStackChart
+            xLabel="Notable Years"
+            title="Technology Stack Distribution"
+            data={getData()}
+          ></VictoryStackChart>
+        </Grid>
+        <GridImage xs={4} src={reactLogo} width="200" height="200" />
+        <GridImage xs={4} src={jsLogo} width="200" height="200" />
+        <GridImage xs={4} src={nodejsLogo} width="200" height="200" />
+        <Grid xs={1} />
+        <GridImage xs={2} src={rorLogo} width="100" height="100" />
+        <GridImage xs={2} src={rubyLogo} width="100" height="100" />
+        <GridImage xs={2} src={pythonLogo} width="100" height="100" />
+        <GridImage xs={2} src={reduxLogo} width="100" height="100" />
+        <GridImage xs={2} src={vueLogo} width="100" height="100" />
+      </Grid>
     </Container>
   );
 }
