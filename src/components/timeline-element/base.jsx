@@ -17,6 +17,18 @@ const useStyles = makeStyles(() => ({
   },
   expandIcon: {
     marginBottom: "auto"
+  },
+  avatar: {
+    marginRight: "10px",
+    width: "32px",
+    height: "32px"
+  },
+  "@media only screen and (min-width: 640px)": {
+    avatar: {
+      marginRight: "35px",
+      width: "96px",
+      height: "96px"
+    }
   }
 }));
 
@@ -54,11 +66,7 @@ export default function Base(props) {
                     src={props.logo}
                     alt={props.institute}
                     title={props.institute}
-                    style={{
-                      marginRight: "35px",
-                      width: "96px",
-                      height: "96px"
-                    }}
+                    className={classes.avatar}
                   />
                 </div>
               )}

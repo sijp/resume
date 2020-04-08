@@ -16,9 +16,9 @@ export default function () {
   );
   const steps = [
     "Ruby on Rails",
-    "Python Microservices",
+    "Python Micro-services",
     "Team Lead",
-    "Microservices Framework",
+    "Micro-services Framework",
     "Web Architect"
   ];
   return (
@@ -27,7 +27,6 @@ export default function () {
       initStep={initStep}
       onChange={updateLocalStorage}
       title="My Milestones"
-      style={{ minWidth: 640 }}
     >
       <>
         <img
@@ -67,16 +66,16 @@ export default function () {
           style={{ float: "left", margin: "0 30px 20px 0" }}
         />
         <Typography variant="h5">
-          January 2017 - Python Microservices
+          January 2017 - Python Micro-services
         </Typography>
         <Typography gutterBottom>
           Made an intensive research on Micro Services architecture, and decided
-          to base on Sam Newman's book "Building Microservices". Developed the
+          to base on Sam Newman's book "Building Micro-services". Developed the
           first services in Python that were responsible to manage long
           asynchronous tasks.
         </Typography>
         <Typography gutterBottom>
-          Mostly used Flask for api servies and RabbitMQ for asynchronous
+          Mostly used Flask for api services and RabbitMQ for asynchronous
           operations. The services were fully integrated with the main
           monolithic application.
         </Typography>
@@ -90,9 +89,9 @@ export default function () {
         />
         <Typography variant="h5">June 2018 - {steps[2]}</Typography>
         <Typography gutterBottom>
-          I wased promoted to Team Lead and Architect. I recruted new
-          developers, making the team twice as large. I was responsible for the
-          team's technical growth as a technical mentor.
+          I was promoted to Team Lead and Architect. I recruited new developers,
+          making the team twice as large. I was responsible for the team's
+          technical growth as a technical mentor.
         </Typography>
         <Typography gutterBottom>
           Also, I was given the task of being the architect of the new customer
