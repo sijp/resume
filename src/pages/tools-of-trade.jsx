@@ -80,7 +80,7 @@ function getData() {
 
 export default function () {
   return (
-    <Container style={{ minWidth: 640 }}>
+    <Container>
       <Grid container spacing={10} style={{ marginTop: 10 }}>
         <Grid item xs={12}>
           <Typography variant="h3" style={{ textAlign: "center" }}>
@@ -94,15 +94,15 @@ export default function () {
             data={getData()}
           ></VictoryStackChart>
         </Grid>
-        <GridImage xs={4} src={reactLogo} width="200" height="200" />
-        <GridImage xs={4} src={jsLogo} width="200" height="200" />
-        <GridImage xs={4} src={nodejsLogo} width="200" height="200" />
+        <GridImage xs={4} src={reactLogo} size="lg" />
+        <GridImage xs={4} src={jsLogo} size="lg" />
+        <GridImage xs={4} src={nodejsLogo} size="lg" />
         <Grid item xs={1} />
-        <GridImage xs={2} src={rorLogo} width="100" height="100" />
-        <GridImage xs={2} src={rubyLogo} width="100" height="100" />
-        <GridImage xs={2} src={pythonLogo} width="100" height="100" />
-        <GridImage xs={2} src={reduxLogo} width="100" height="100" />
-        <GridImage xs={2} src={vueLogo} width="100" height="100" />
+        <GridImage xs={2} src={rorLogo} size="md" />
+        <GridImage xs={2} src={rubyLogo} size="md" />
+        <GridImage xs={2} src={pythonLogo} size="md" />
+        <GridImage xs={2} src={reduxLogo} size="md" />
+        <GridImage xs={2} src={vueLogo} size="md" />
       </Grid>
     </Container>
   );
