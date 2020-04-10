@@ -2,9 +2,11 @@ import React from "react";
 import { Card, CardMedia, CardContent } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   card: {},
-  cardContent: {},
+  cardContent: {
+    padding: "2rem"
+  },
   cardMedia: {
     height: "400px",
     backgroundPosition: "top"
