@@ -7,7 +7,7 @@ export default function Header() {
       <div>
         <Avatar
           alt="Shlomi Israel"
-          src="https://avatars2.githubusercontent.com/u/773966?s=460&v=4"
+          src="/my-photo.jpg"
           style={{
             width: "256px",
             height: "256px",
