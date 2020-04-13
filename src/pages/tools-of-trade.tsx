@@ -11,9 +11,11 @@ import reduxLogo from "../logos/redux.svg";
 import vueLogo from "../logos/vue.svg";
 
 import GridImage from "../components/grid-image";
-import VictoryStackChart from "../components/victory-stack-chart";
+import VictoryStackChart, {
+  StackedChartData
+} from "../components/victory-stack-chart";
 
-function getData() {
+function getData(): StackedChartData {
   return {
     jquery: {
       data: [

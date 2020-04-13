@@ -9,7 +9,21 @@ import {
 
 import { Card, CardContent } from "@material-ui/core";
 
-export default function ({ data, title, xLabel }) {
+export type StackedChartData = {
+  [key: string]: {
+    data: Array<{ x: string; y: number }>;
+    style: { fill: string };
+    legend: string;
+  };
+};
+
+export type VictoryStackChartProps = {
+  data: StackedChartData;
+  title: string;
+  xLabel: string;
+};
+
+export default function ({ data, title, xLabel }: VictoryStackChartProps) {
   const dataPoints = Object.entries(data).map(([_, obj]) => obj);
   const legends = dataPoints.map(({ legend, style: { fill } }) => ({
     name: legend,

@@ -4,10 +4,12 @@ import "react-vertical-timeline-component/style.min.css";
 
 import Star from "./timeline-element/star";
 
-export default function Timeline(props) {
+type TimelineProps = { children: Array<any> };
+
+export default function Timeline({ children }: TimelineProps) {
   return (
     <VerticalTimeline>
-      {props.children}
+      {children}
       <Star />
     </VerticalTimeline>
   );
