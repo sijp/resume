@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
+import { Grid, GridProps } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
@@ -31,7 +31,14 @@ const useStyles = makeStyles({
   }
 });
 
-export default function (props) {
+export type GridImageProps = {
+  xs: GridProps["xs"];
+  size: "lg" | "md" | "sm";
+  src: string;
+  alt: string;
+};
+
+export default function (props: GridImageProps) {
   const { xs, size, src, alt } = props;
   const classes = useStyles();
   return (

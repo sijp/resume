@@ -1,9 +1,9 @@
 import React from "react";
-import Base from "./base";
+import Base, { TimelineBaseProps } from "./base";
 
 import WorkIcon from "@material-ui/icons/Work";
 
-export default function Work(props) {
+export default function Work(props: TimelineBaseProps) {
   return (
     <Base
       className="vertical-timeline-element--work"

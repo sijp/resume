@@ -1,5 +1,8 @@
-import React from "react";
-import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import React, { ReactElement } from "react";
+import {
+  VerticalTimelineElement,
+  VerticalTimelineElementProps
+} from "react-vertical-timeline-component";
 
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
@@ -32,7 +35,17 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-export default function Base(props) {
+export type TimelineBaseProps = VerticalTimelineElementProps & {
+  date: string;
+  icon?: ReactElement;
+  title: string;
+  logo: string;
+  institute: string;
+  location: string;
+  children: Array<ReactElement> | ReactElement;
+};
+
+export default function Base(props: TimelineBaseProps) {
   const classes = useStyles();
   return (
     <VerticalTimelineElement

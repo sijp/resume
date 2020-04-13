@@ -8,12 +8,11 @@ import nodejsLogo from "../logos/nodejs.svg";
 import { Typography } from "@material-ui/core";
 
 export default function () {
-  const updateLocalStorage = (step) => {
-    window.localStorage.setItem("importantMilestones.currentStep", step);
+  const updateLocalStorage = (step: number | string) => {
+    window.localStorage.setItem("importantMilestones.currentStep", `${step}`);
   };
-  const initStep = window.localStorage.getItem(
-    "importantMilestones.currentStep"
-  );
+  const initStep =
+    window.localStorage.getItem("importantMilestones.currentStep") || 0;
   const steps = [
     "Ruby on Rails",
     "Python Micro-services",

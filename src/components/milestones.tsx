@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, ReactElement, CSSProperties } from "react";
 
 import {
   Container,
@@ -34,14 +34,29 @@ const useStyles = makeStyles({
   }
 });
 
-export default function (props) {
-  const { steps, children, initStep, onChange, title, style } = props;
-  const [activeStep, setActiveStep] = useState(parseInt(initStep) || 0);
+export type MilestonesProps = {
+  steps: Array<string>;
+  children: Array<ReactElement> | ReactElement;
+  initStep: number | string;
+  onChange: (step: number) => void;
+  title: string;
+  style?: CSSProperties;
+};
+
+export default function ({
+  steps,
+  children,
+  initStep,
+  onChange,
+  title,
+  style
+}: MilestonesProps) {
+  const [activeStep, setActiveStep] = useState(parseInt(`${initStep}`) || 0);
   const classes = useStyles();
 
   const stepContent = Array.isArray(children) ? children : [children];
 
-  const handleStep = (step) => () => {
+  const handleStep = (step: number) => () => {
     setActiveStep(step);
     onChange(step);
   };

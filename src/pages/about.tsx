@@ -25,7 +25,7 @@ export default function () {
     >
       <Container>
         <CardImage
-          title="Life at Trusteer"
+          imageTitle="Life at Trusteer"
           image="./working-in-trusteer.jpg"
           imageFirst={true}
         >
@@ -61,12 +61,7 @@ export default function () {
               href="https://www.linkedin.com/in/shlomi-israely/"
               target="_blank"
             >
-              <LinkedInLogo
-                fill="currentColor"
-                width="24"
-                height="24"
-                src={LinkedInLogo}
-              />
+              <LinkedInLogo fill="currentColor" width="24" height="24" />
               &nbsp; View LinkedIn Profile
             </Button>
           </div>

@@ -96,15 +96,15 @@ export default function () {
             data={getData()}
           ></VictoryStackChart>
         </Grid>
-        <GridImage xs={4} src={reactLogo} size="lg" />
-        <GridImage xs={4} src={jsLogo} size="lg" />
-        <GridImage xs={4} src={nodejsLogo} size="lg" />
+        <GridImage xs={4} src={reactLogo} size="lg" alt="React" />
+        <GridImage xs={4} src={jsLogo} size="lg" alt="Javascript" />
+        <GridImage xs={4} src={nodejsLogo} size="lg" alt="Node.JS" />
         <Grid item xs={1} />
-        <GridImage xs={2} src={rorLogo} size="md" />
-        <GridImage xs={2} src={rubyLogo} size="md" />
-        <GridImage xs={2} src={pythonLogo} size="md" />
-        <GridImage xs={2} src={reduxLogo} size="md" />
-        <GridImage xs={2} src={vueLogo} size="md" />
+        <GridImage xs={2} src={rorLogo} size="md" alt="Ruby on Rails" />
+        <GridImage xs={2} src={rubyLogo} size="md" alt="Ruby" />
+        <GridImage xs={2} src={pythonLogo} size="md" alt="Python" />
+        <GridImage xs={2} src={reduxLogo} size="md" alt="Redux" />
+        <GridImage xs={2} src={vueLogo} size="md" alt="Vue" />
       </Grid>
     </Container>
   );

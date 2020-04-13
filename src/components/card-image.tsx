@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { Card, CardMedia, CardContent } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -25,10 +25,24 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function CardImage({ children, image, imageTitle, imageFirst }) {
+export type CardImageProps = {
+  children: Array<ReactElement> | ReactElement;
+  image: string;
+  imageTitle: string;
+  imageFirst?: boolean;
+};
+
+export default function CardImage({
+  children,
+  image,
+  imageTitle,
+  imageFirst = false
+}: CardImageProps) {
   const classes = useStyles();
 
-  const order = imageFirst ? (arr) => arr : (arr) => [...arr].reverse();
+  const order = imageFirst
+    ? (arr: Array<ReactElement>) => arr
+    : (arr: Array<ReactElement>) => [...arr].reverse();
 
   return (
     <Card className={classes.card} raised={true}>

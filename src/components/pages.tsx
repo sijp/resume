@@ -1,7 +1,12 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { Container } from "@material-ui/core";
 
-export default function ({ children, background }) {
+export type PagesProps = {
+  children: ReactElement[] | ReactElement;
+  background: string[];
+};
+
+export default function ({ children, background }: PagesProps) {
   const pages = Array.isArray(children) ? children : [children];
   return (
     <>

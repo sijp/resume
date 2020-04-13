@@ -1,9 +1,8 @@
 import React from "react";
-
-import Base from "./base";
+import Base, { TimelineBaseProps } from "./base";
 import SchoolIcon from "@material-ui/icons/School";
 
-export default function School(props) {
+export default function School(props: TimelineBaseProps) {
   return (
     <Base
       className="vertical-timeline-element--education"
