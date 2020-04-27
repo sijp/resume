@@ -11,6 +11,7 @@ import About from "./pages/about";
 import ToolsOfTrade from "./pages/tools-of-trade";
 import ProjectsTimeline from "./pages/important-milestones";
 import MoreAbout from "./pages/more-about";
+import ReadMore from "./pages/readmore";
 import Pages from "./components/pages";
 
 const theme = createMuiTheme({
@@ -43,7 +44,8 @@ function App() {
             "none",
             "url(/wallpaper-milestones.jpg)",
             "none",
-            "#CCC"
+            "#CCC",
+            "#263238"
           ]}
         >
           <Header key="page-header" />
@@ -52,6 +54,7 @@ function App() {
           <ProjectsTimeline key="page-projects-timeline" />
           <ToolsOfTrade key="page-tools-of-trade" />
           <MoreAbout key="page-more-about" />
+          <ReadMore key="page-read-more" />
         </Pages>
       </ThemeProvider>
     </div>
